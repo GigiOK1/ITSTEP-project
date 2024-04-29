@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+button, input {
+    cursor: pointer;
+}

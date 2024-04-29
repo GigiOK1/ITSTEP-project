@@ -1,0 +1,117 @@
+.imgDiv {
+
+    padding: 20px;
+    height: 50vh;
+    margin-right: 10px;
+    border-right: solid 1.5px rgba(116, 116, 116, 0.292);
+
+}
+.imgDiv img {
+
+    height: 40vh;
+    width: 20vw;
+
+}
+.main {
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: #cdccab76;
+    width: auto;
+    height: 70vh;
+}
+.inner {    
+    padding: 15px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+
+    width: 50vw;
+
+}
+section {
+    
+    display: flex;
+    flex-direction: row;
+
+}
+section img {
+    border: solid 3px #9c9b82af;
+    width: 25vw;
+    height: 40vh;
+
+}
+section h1 {
+
+    margin-top: 30px;
+
+}
+section p {
+
+    font-size: 2vw;
+
+}
+section h2{
+
+    font-size: 3vw;
+
+}
+.btn {
+    border-radius: 1.5px;
+    color: #313226;
+    background-color: #96968bcd;
+    margin-top: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    height: 2vw;
+    width: 10vh;
+    transition: 0.3s;
+
+}
+.btn:hover {
+border-radius: 3px;
+background-color:#b4b6a4;
+color: rgb(255, 255, 255);
+}
+section h1 {
+    border-bottom: solid 1.5px #3132267a;;
+    font-size: 2vw;
+
+}
+@media screen and (min-width:750px) and (max-width:1450px){
+
+    .imgDiv {
+
+        width: 30vw;
+        height: 35vh;
+
+    }
+    .imgDiv img {
+
+        width: 25vw;
+        height: 25vh;
+
+    }
+  
+
+
+}
+@media screen and (min-width:400px) and (max-width:750px){
+
+    .imgDiv {
+
+        width: 30vw;
+        height: 35vh;
+
+    }
+    .imgDiv img {
+
+        width: 25vw;
+        height: 20vh;
+
+    }
+  
+
+
+}

@@ -1,0 +1,74 @@
+
+
+.main {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #4c4d3b4c, #53534f4c);
+}
+
+.contact1, .contact2, .contact3 {
+    margin: 20px;
+    padding: 20px;
+    color: #313226;
+    border-right: solid 3px rgba(41, 41, 41, 0.292);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact2 {
+    max-width: 600px;
+}
+
+.phone, .insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phoneImg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.socials {
+    font-size: 30px;
+}
+
+
+@media screen and (min-width: 770px) {
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .contact1, .contact3 {
+        width: 30%;
+    }
+    .contact2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .main {
+
+        height: 55vh;
+
+    }
+    .phone, .insta {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .phoneImg {
+        margin: 0 0 10px 0;
+    }
+}

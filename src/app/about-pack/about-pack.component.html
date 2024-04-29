@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="inner">
+        <section>
+            <div class="imgDiv">
+        <img [src]="PackCard?.img" alt="">
+            </div>
+        <div class="info">
+            <h2>{{PackCard?.name}}</h2>
+            <p>{{PackCard?.price}}₾</p>
+            <button class="btn" (click)="addToCart(PackCard)">Add to cart</button>
+            <h1>Contains</h1>
+            <h3>{{PackCard?.list}}</h3>
+        </div>
+
+        </section>
+    </div>
+</div>

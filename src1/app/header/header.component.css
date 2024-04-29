@@ -1,0 +1,85 @@
+.nav a{
+  color: white;
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  background-color: rgb(235,168,180);
+}
+
+.nav a{
+  text-decoration: none;
+  margin: 15px;
+  color: #D51946;
+  font-size: 20px;
+}
+
+.category-button:active,
+.category-button:focus {
+  outline: none;
+  color: #D51946;
+}
+
+.nav a:hover{
+  transition: 0.3s;
+  color: white;
+}
+
+.losi a{
+  padding: 7px 29px;
+  background-color: white;
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  color: #D51946;
+  margin-left: 620px;
+}
+
+.losi a:hover{
+  color: #D51946;
+  transition: 0.5s;
+  padding: 8px 30px;
+  font-size: 17.2px;
+}
+
+.losi:hover{
+  transform: translateY(-1px);
+  transition: 0.3s;
+}
+
+.logo img{
+  width: 125px;
+  height: 125px;
+  margin-left: -160px;
+  cursor: pointer;
+}
+
+.cart img{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.cart:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.cart img:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}

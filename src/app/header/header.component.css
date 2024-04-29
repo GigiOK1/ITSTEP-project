@@ -1,0 +1,94 @@
+header {
+    width: 99.9%;
+    background-color: black;
+    height: 150px;
+    padding-bottom: 150px;
+}
+.logo {
+
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 10px;
+    transition: 0.3s;
+
+}
+
+
+header nav a {  
+    user-select: none;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.825);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+
+
+}
+header nav a:hover {
+
+    color: white;
+
+}
+.logoDiv {
+
+    width: 500px;
+}
+.div {
+
+    display: flex;
+    flex-direction: row;
+
+}
+header nav {
+
+    display: flex;
+    flex-direction: row;
+
+    width: 400px;   
+    margin-left: 50%;
+    margin-top: 60px;
+    gap: 10px;
+    transition: 0.3s;
+}
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 350px;
+    
+    margin-top: 20px;
+
+
+  }
+  .logoDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .div {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+  header nav {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  header nav {
+    margin-left: 0;
+    height: 100%;
+    align-items: center;
+
+  }
+  header nav a {
+
+    font-size: 20px;
+
+  }
+}
+

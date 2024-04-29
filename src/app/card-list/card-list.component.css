@@ -1,0 +1,126 @@
+.main {
+  margin-left: 0.5vw;
+    background-image: linear-gradient(to right,#bbbd904c,#CDCCAB4c);
+    padding: 15px;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    transition: 0.3s;
+    justify-content: center;
+    overflow-x: scroll;
+    
+}
+app-card {
+
+        display: flex;
+        flex-direction: row;
+
+}
+form {
+
+  display: flex;
+  justify-content: center;
+
+}
+.form-control{
+    padding: 5px;
+    background: none;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: 800px;
+    height: 35px;
+    border-radius: 15px;
+    border: solid 0.5px #15694283;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.form-control::placeholder{
+    
+    opacity: 0.5;
+
+}
+.filters{   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0f5132;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    gap: 15px;
+    transition: 0.3s;
+    height: 50px;
+    user-select: none;
+}
+.hover1 {
+
+
+    transition: all 0.2s ease-in-out;
+
+}
+.hover2 {
+
+
+    transition: all 0.2s ease-in-out;
+
+}
+.hover3 {
+
+
+    transition: all 0.2s ease-in-out;
+
+}
+.hover1:hover {
+
+    padding-bottom: 10px;
+    color: #156942;
+
+    
+
+}
+.hover2:hover {
+
+    padding-bottom: 10px;
+    color: #156942;
+
+    
+
+}
+.hover3:hover {
+
+    padding-bottom: 10px;
+    color: #156942;
+
+    
+
+}
+@media screen and (max-width: 850px) {
+  .main {
+    width: 95vw;
+    overflow: hidden;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 250px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: 700px;
+  }
+  .form-control {
+        
+        width: 250px;
+
+    }
+}
+@media screen and (max-width: 1750px) {
+  .main {overflow-x: scroll;}
+}
+@media screen and (min-width : 851px) and (max-width: 1750px) {
+  .main {
+  width: 97vw;
+
+  }
+}

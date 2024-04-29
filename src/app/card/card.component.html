@@ -1,0 +1,10 @@
+
+
+<div class="main" >
+    <div class="card" >
+            <img class="img" [src]="card.img" alt="Img" >
+            <h2>{{card.name}}</h2>
+            <h3> {{card.price}}₾ </h3>
+             <button class="btn" [routerLink]="['/about', card.id]">Shop Now</button>
+    </div>
+</div>

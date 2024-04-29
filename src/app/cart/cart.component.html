@@ -1,0 +1,31 @@
+<div class="main">
+  <h1>View Products</h1>
+    <div class="item">
+    
+        <div class="cart-item"  *ngFor="let item of cartService.getItems()">
+          <img [src]="item.img" alt="" class="img">
+          
+          <h3>{{ item.name }}</h3>
+          <p>Price: {{ item.price }}₾ </p>
+          <p>Quantity: {{item.quantity}}</p>
+          <div class="btns">
+            <button (click)="deleteFromCart(item)" class="deletebtn">Remove</button>
+            <div class="quantity">
+              <button (click)="cartService.incrementQuantity(item.id)" class="pm">+</button>
+              <button (click)="cartService.decrementQuantity(item.id)" class="pm">-</button>
+            </div>
+          </div>
+    
+      </div>
+    </div>
+    </div>
+
+    <div class="check">
+      
+      <h1></h1>
+      <a routerLink="checkout">
+      <button>Proceed to checkout({{ cartService.getTotal() }}₾)</button>
+      </a>
+      
+    </div>
+    <app-mail class="mail"></app-mail>

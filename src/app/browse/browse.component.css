@@ -1,0 +1,93 @@
+.main {
+    border-top: solid 0.5px #15694283;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+    transition: 0.3s;
+}
+
+app-card {
+
+    margin-top: 10px;
+
+}
+.container {
+
+    display: flex;
+    flex-direction: column;
+
+}
+.categories{ 
+    display: flex;
+    flex-direction: column;
+    border: solid 0.5px #15694283;
+    height: 20vh;
+}
+form {
+
+    display: flex;
+    justify-content: center;
+  
+}
+.form-control{
+    margin-top: 20px;
+      padding: 5px;
+      background: none;
+      border: none;
+      background-color: white;
+      padding: 10px;
+      width: 800px;
+      height: 35px;
+      border-radius: 15px;
+      border: solid 0.5px #15694283;
+      margin-bottom: 10px;
+      transition: 0.3s;
+}
+.filters{   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0f5132;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    gap: 15px;
+    transition: 0.3s;
+    height: 50px;
+    user-select: none;
+}
+.filters .button {
+    padding-right: 10px;
+    border-right: solid 0.5px #0f513269;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+
+
+}
+.filters .button:hover {
+    border-right: solid 1px #0f5132;
+    color: #188a55;
+
+}
+@media screen and (min-width:1130px) and (max-width:1450px){
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+@media screen and (min-width:300px) and (max-width:1130px){
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="categories">
+        <div class="search">
+            <form>
+                <input type="text" class="form-control" placeholder="Search for cards..." #filter (keyup)="filterResults(filter.value)">
+            </form>
+        </div>
+        <div class="filters">
+            <div class="button" (click)="onCategoryChange('all')">All</div>
+            <div class="button" (click)="onCategoryChange('bicycle')">Bicycle</div>
+            <div class="button" (click)="onCategoryChange('Plastic')">100% Plastic</div>
+            <div class="button" (click)="onCategoryChange('Featured')">Featured</div>
+            <div class="button" (click)="onCategoryChange('Sale')">Sale</div>
+        </div>
+    </div>
+        <div class="main">
+
+                <app-card *ngFor="let card of filteredCardList" [card]="card"></app-card>
+
+        </div>
+</div>

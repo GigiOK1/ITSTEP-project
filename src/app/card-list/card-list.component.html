@@ -1,0 +1,15 @@
+<div class="filters">
+<h1 class="hover1" (click)="onCategoryChange('Featured')">Featured</h1>
+<h1 class="hover2" (click)="onCategoryChange('Sales')"> Sales</h1>
+<h1 class="hover3" (click)="onCategoryChange('Popular')">Popular</h1>
+
+</div>
+<form>
+    <input type="text" class="form-control" placeholder="Search for cards..." #filter (keyup)="filterResults(filter.value)">
+  </form>
+<div class="main">
+    <app-card *ngFor="let card of filteredCardList" [card]="card" 
+    ></app-card>
+</div>
+
+

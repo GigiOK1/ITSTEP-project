@@ -1,0 +1,67 @@
+.main {
+
+
+    padding-top: 10px;
+    margin-top: 25px;
+    background-color: #a4a67f4c;
+    
+    height: 150px;
+}
+.main img {
+cursor:pointer;
+}
+.imgs :nth-child(1) {
+
+    height: 150px;
+    width: 150px;
+
+
+
+}
+.imgs {
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.bee {
+
+    height: 100px;
+    width: 200px;
+
+}
+.ell {
+
+
+    height: 100px;
+    width: 100px;
+}
+@media only screen and (max-width: 850px) {
+    .imgs {
+        margin: 0;
+    }
+    .imgs :nth-child(1){
+
+        height: 80px;
+        width: 80px;
+    }
+    .bee {
+
+        height: 70px;
+        width: 120px;
+
+    }
+    .ell {
+
+        height: 70px;
+        width: 70px;
+
+    }
+    .arr {
+
+        width: 100px;
+        height: 100px;
+
+    }
+    
+}
